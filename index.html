@@ -14,6 +14,7 @@
     <main>
         <!--selexioni generali-->
         <div id="selections">
+            <form>
             <!--kilometri-->
             <label for="km"> Inserisci i Km da percorrere</label>
             <input type="text" id="km">
@@ -23,13 +24,14 @@
             <input type="text" id="name">
 
             <!--Nome passeggero-->
+            <label for="select">Seleziona La tua età</label>
             <select name="select" id="select">
                 <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="over65">Over 65</option>
             </select>
         </div>
-
+</form>
         <!--bottoni-->
         <div id="buttons">
             <button id="confirm">Conferma</button>
@@ -48,11 +50,11 @@
                     <th>Codice Biglietto</th>
                 </tr>
             <tr>
-                <th id="tableName"></th>
-                <th id="offert"></th>
-                <th id="seatN"></th>
-                <th id="cost"></th>
-                <th id="ticketCode"></th>
+                <td id="tableName"></td>
+                <td id="offert"></td>
+                <td id="seatN"></td>
+                <td id="cost"></td>
+                <td id="ticketCode"></td>
             </tr>
             </table>
         </div>
