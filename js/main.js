@@ -28,15 +28,25 @@ confirmDom.addEventListener('click',
         const km = document.getElementById('km');
         const priceKm = 0.21;
         let totPrice = priceKm * km.value;
-        let scontoSenior = (40 / 100) * totPrice;
-        let spesaSenior = totPrice - scontoSenior;
-        let scontoJunior = (20 / 100) * totPrice;
-        let spesaJunior = totPrice - scontoJunior;
+        let discountSenior = (40 / 100) * totPrice;
+        let expenseSenior = totPrice - discountSenior;
+        let discountJunior = (20 / 100) * totPrice;
+        let expenseJunior = totPrice - discountJunior;
         if (agePassenger == 'maggiorenne')
             document.getElementById('cost').innerHTML = parseInt(totPrice);
         else if (agePassenger == "minorenne")
-            document.getElementById('cost').innerHTML = parseInt(spesaJunior);
+            document.getElementById('cost').innerHTML = parseInt(expenseJunior);
         else if (agePassenger == 'over65')
-            document.getElementById('cost').innerHTML = parseInt(spesaSenior);
+            document.getElementById('cost').innerHTML = parseInt(expenseSenior);
     }
+)
+
+//rest button
+const resetDom = document.getElementById('reset');
+resetDom.addEventListener('click',
+function (){
+    location.reload()
+
+}
+
 )
