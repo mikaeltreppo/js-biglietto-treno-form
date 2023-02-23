@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trenitalia</title>
+</head>
+
+<body>
+
+    <main>
+    <!--selexioni generali-->
+        <div id="selections">
+            <!--kilometri-->
+            <label for="km"> Inserisci i Km da percorrere</label>
+            <input type="text" id="km">
+
+            <!--Nome passeggero-->
+            <label for="name"> Inserisci il tuo Nome e Cognome</label>
+            <input type="text" id="name">
+
+            <!--Nome passeggero-->
+            <select name="select" id="select">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+
+        <!--bottoni-->
+        <div id="buttons">
+            <button id="confirm">Conferma</button>
+            <button id="reset"> Reset</button>
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
