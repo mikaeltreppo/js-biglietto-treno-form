@@ -73,20 +73,25 @@ table {
     padding-bottom: 30px;
     border: 1px solid gray;
 }
-label{
-    color:  rgb(185, 20, 80);;
+
+label {
+    color: rgb(185, 20, 80);
+    ;
 }
-input{
-    border: 1px solid  rgb(185, 20, 80);
+
+input {
+    border: 1px solid rgb(185, 20, 80);
     border-radius: 10px;
     padding: 3px;
 }
+
 th {
     height: 70px;
     width: calc(100% / 5)
 }
-button:hover{
-    background-color:  rgb(185, 20, 80);
+
+button:hover {
+    background-color: rgb(185, 20, 80);
     color: white;
-    
+
 }
