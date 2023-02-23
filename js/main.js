@@ -1,8 +1,8 @@
 
-document.getElementById('km').innerHTML = km;
 
 
 
+const km = document.getElementById('km');
 const priceKm = 0.21;
 let totPrice = priceKm * km;
 let scontoSenior = (40 / 100) * totPrice;
@@ -17,8 +17,7 @@ const confirmDom = document.getElementById('confirm');
 confirmDom.addEventListener('click',
 
     function () {
-        const kmPassenger = document.getElementById('km');
-        const tellKm = kmPassenger.value;
+        const tellKm = km.value;
         console.log(tellKm);
     }
 )
