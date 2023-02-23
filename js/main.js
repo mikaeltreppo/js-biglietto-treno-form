@@ -33,11 +33,11 @@ confirmDom.addEventListener('click',
         let discountJunior = (20 / 100) * totPrice;
         let expenseJunior = totPrice - discountJunior;
         if (agePassenger == 'maggiorenne')
-            document.getElementById('cost').innerHTML = parseInt(totPrice);
+            document.getElementById('cost').innerHTML = parseInt(totPrice) + " €";
         else if (agePassenger == "minorenne")
-            document.getElementById('cost').innerHTML = parseInt(expenseJunior);
+            document.getElementById('cost').innerHTML = parseInt(expenseJunior)  + " €";
         else if (agePassenger == 'over65')
-            document.getElementById('cost').innerHTML = parseInt(expenseSenior);
+            document.getElementById('cost').innerHTML = parseInt(expenseSenior)  + " €";
     }
 )
 
